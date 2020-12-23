@@ -1,0 +1,59 @@
+<br>
+  <div class =" d-flex justify-content-center">
+    <h2><i>List of Previous Customers</i></h2>
+</div>
+
+<br>
+
+<div class="container d-flex justify-content-center">
+  <table >
+      <thead>
+          <td>Customer ID</td>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Address</td>
+      </thead>
+      <tbody *ngFor="let the_customer of customerList">
+              <td>{{the_customer.customer_id}}</td>
+              <td>{{the_customer.firstName}}</td>
+              <td>{{the_customer.lastName}}</td>
+              <td>{{the_customer.address}}</td>
+      </tbody>
+  </table>
+</div>
+
+<br>
+
+
+
+<!--
+<div>
+  <form #messageForm="ngForm">
+      <div>
+          <input name="email" #messageText type="text" placeholder="email" [(ngModel)]="email" required/>
+
+          <input name="firstName" #messageText type="text" placeholder="First Name" [(ngModel)]="firstName" required/>
+
+          <input name="lastName" #messageText type="text" placeholder="Last Name" [(ngModel)]="lastName" required/>
+
+      </div>
+      <div>
+          <button >Submit</button>
+      </div>
+  </form>
+</div>
+-->
+
+
+
+<!-- <div class="grid grid-pad">
+    <a *ngFor="let the_customer of customerList" class="col-1-4">
+      <div class="module hero">
+        <h3>Customer ID: {{the_customer.customer_id}}</h3>
+        <h4>Customer Name: {{the_customer.firstName}}</h4>
+        <h4>Customer Email :{{the_customer.email}}</h4>
+      </div>
+    </a>
+  </div> -->
+
+ 

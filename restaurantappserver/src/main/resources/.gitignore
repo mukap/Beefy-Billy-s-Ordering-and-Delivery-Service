@@ -1,0 +1,5 @@
+/target/
+/.settings/
+/.idea/
+hibernate.cfg.xml
+PersistenceConfig.java

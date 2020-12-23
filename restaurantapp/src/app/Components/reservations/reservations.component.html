@@ -1,0 +1,72 @@
+<br>
+  <div class =" d-flex justify-content-center">
+    <h2><i>Reservation Form:</i></h2>
+    </div>
+
+<br>
+
+
+<div  class ="d-flex justify-content-center">
+  <div class="container">
+    <form [formGroup]="reservationForm" (ngSubmit)="getReservationInfo()">
+        <div class="form-group input-group-lg">
+          <input class="form-control" type = "text" placeholder="First Name" formControlName="firstName">
+      </div>
+
+      <div class="form-group input-group-lg">
+        <input class="form-control" type = "text" placeholder="Last Name" formControlName="lastName">
+      </div>
+
+      <div class="form-group input-group-lg">
+      <input class="form-control" type = "text" placeholder="Email" formControlName="email">
+      </div>
+
+      <div class="form-group input-group-lg">
+      <input class="form-control" type = "text" placeholder="Address" formControlName="address">
+      </div>
+      
+      <div class="form-group input-group-lg">
+      <h4>Enter the Date of the Reservation</h4>
+      <input type="date" formControlName="date"><br />
+      </div>
+
+      <div class="form-group input-group-lg">
+      <h4>Enter the Hour of your Reservation</h4>
+      <input type="number" formControlName="time"><br />
+      </div>
+
+      <button class="btn btn-danger btn-block btn-lg">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="authService.getSessionType()">
+  <br>
+
+  <br>
+    <div class =" d-flex justify-content-center">
+    <h2><i>Booked Reservations:</i></h2>
+    </div>
+  <br>
+  <div class="container d-flex justify-content-center">
+    <table>
+      <thead>
+          <td>Reservation Number</td>
+          <td>Customer ID</td>
+          <td>Reserved Date</td>
+          <td>Reserved Time</td>
+          <td>Status</td>
+      </thead>
+      <tbody *ngFor="let reservations of reservationsList">
+              <td>{{reservations.reservation_id}}</td>
+              <td>{{reservations.customer_id}}</td>
+              <td>{{reservations.date}}</td>
+              <td>{{reservations.time}}</td>
+              <td>{{reservations.status}}</td>
+              <button (click)=cancelReservations(reservations.reservation_id)>Cancel Reservation</button>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<br>

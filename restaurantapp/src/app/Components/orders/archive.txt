@@ -1,0 +1,28 @@
+<!--
+
+<div *ngIf="authService.getSessionType()" class="container">
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+
+    <div class="form-group input-group-lg">
+          <input class="form-control" type = "text" placeholder="DELIVERY, INHOUSE, PICKUP" formControlName="orderType">
+    </div>
+
+    No Status Field-->
+
+    <!-- No customer ID
+
+    <div class="form-group input-group-lg">
+        <input class="form-control" type = "text" placeholder="Delivery Address" formControlName="deliveryAddress">
+    </div>
+
+    <div class="form-group input-group-lg">
+      <input class="form-control" type = "text" placeholder="Billing Address" formControlName="billingAddress">
+    </div>
+
+      <div class="form-group">
+          <button class="btn btn-danger btn-block btn-lg">Submit</button>
+      </div>
+  </form>
+</div>
+
+-->

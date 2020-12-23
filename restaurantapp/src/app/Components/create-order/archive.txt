@@ -1,0 +1,150 @@
+<!--
+  <div class="grid grid-pad">
+    <a *ngFor="let menuItem of menuList" class="col-1-4">
+      <div class="module hero">
+        <h3>Menu ID: <p #menuID>{{menuItem.menu_id}}</p></h3>
+        <h4>Name: <p #itemName>{{menuItem.itemName}}</p></h4>
+        <h4>Description: <p #description>{{menuItem.description}}</p></h4>
+        <h4>Price: $ <p #price>{{menuItem.price}}</p></h4>
+        <button (click)="addItemToOrderList(menuID, itemName, description, price);">Submit</button>
+      </div>
+    </a>
+  </div>
+
+-->
+
+<!--
+<div class="container">
+  <table >
+    <thead>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Price</td>
+    </thead>
+    <tbody *ngFor="let item of orderList">
+            <p style="display: none;" #menuID>{{item.menu_id}}</p>
+            <td #itemName>{{item.itemName}}</td>
+            <td #description>{{item.description}}</td>
+            <td #price>{{item.price}}</td>
+           <td><button (click)="addItemToOrderList2(menuID, itemName, description, price);">Submit</button></td>
+    </tbody>
+</table>
+</div>
+
+
+-->
+
+
+
+<!--
+<div class="container">
+  <form [formGroup]="orderForm2" (ngSubmit)="submitOrderForm2()">
+
+    <div class="form-group input-group-lg">
+        <input class="form-control" type = "text" placeholder="First Name" formControlName="firstName">
+     </div>
+
+     <div class="form-group input-group-lg">
+      <input class="form-control" type = "text" placeholder="Last Name" formControlName="lastName">
+     </div>
+
+    <div class="form-group input-group-lg">
+    <input class="form-control" type = "text" placeholder="Email" formControlName="email">
+     </div>
+
+    <div class="form-group input-group-lg">
+    <input class="form-control" type = "text" placeholder="Address" formControlName="address">
+     </div>
+
+
+
+    <div class="form-group input-group-lg">
+          <input class="form-control" type = "text" placeholder="DELIVERY, INHOUSE, PICKUP" formControlName="orderType">
+    </div>
+
+     No Status Field
+
+    No customer ID
+
+    <div class="form-group input-group-lg">
+        <input class="form-control" type = "text" placeholder="Delivery Address" formControlName="deliveryAddress">
+    </div>
+
+    <div class="form-group input-group-lg">
+      <input class="form-control" type = "text" placeholder="Billing Address" formControlName="billingAddress">
+    </div>
+
+      <div class="form-group">
+          <button class="btn btn-danger btn-block btn-lg">Submit</button>
+      </div>
+  </form>
+</div>
+
+-->
+
+<!--
+
+<div class="container">
+    <form [formGroup]="orderForm" (ngSubmit)="submitOrderForm()">
+  
+
+
+
+      <div class="form-group input-group-lg">
+            <input class="form-control" type = "text" placeholder="DELIVERY, INHOUSE, PICKUP" formControlName="orderType">
+      </div>
+  
+      No Status Field
+  
+       No customer ID
+  
+      <div class="form-group input-group-lg">
+          <input class="form-control" type = "text" placeholder="Delivery Address" formControlName="deliveryAddress">
+      </div>
+  
+      <div class="form-group input-group-lg">
+        <input class="form-control" type = "text" placeholder="Billing Address" formControlName="billingAddress">
+      </div>
+  
+        <div class="form-group">
+            <button class="btn btn-danger btn-block btn-lg">Submit</button>
+        </div>
+    </form>
+  </div>
+
+
+
+
+
+
+<p>Step 1: Enter Your Customer Information</p>
+
+<div class="container">
+    <form [formGroup]="customerForm" (ngSubmit)="submitCustomerForm()">
+  
+      <div class="form-group input-group-lg">
+            <input class="form-control" type = "text" placeholder="First Name" formControlName="firstName">
+      </div>
+  
+      <div class="form-group input-group-lg">
+          <input class="form-control" type = "text" placeholder="Last Name" formControlName="lastName">
+      </div>
+  
+      <div class="form-group input-group-lg">
+        <input class="form-control" type = "text" placeholder="Email" formControlName="email">
+      </div>
+  
+      <div class="form-group input-group-lg">
+        <input class="form-control" type = "text" placeholder="Address" formControlName="address">
+      </div>
+  
+        <div class="form-group">
+            <button class="btn btn-danger btn-block btn-lg">Submit</button>
+        </div>
+    </form>
+  </div>
+
+
+
+
+-->
