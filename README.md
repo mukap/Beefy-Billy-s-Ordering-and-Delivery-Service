@@ -42,4 +42,4 @@ Restaurant Delivery App is a web application designed to facilitate customers or
 
 ## Contributors
 
-> Justin Kroh , Pascaline Mukakamari, Ronald Martz
+> Justin Kroh , Pascaline Mukakamari and Ronald Martz
