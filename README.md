@@ -39,3 +39,7 @@ Restaurant Delivery App is a web application designed to facilitate customers or
 * A manager can make changes to the menu (Add, Update and Delete).
 * A manager can view all orders regardless of their status.
 * A manager can create and remove employees.
+
+## Contributors
+
+> Justin Kroh , Pascaline Mukakamari, Ronald Martz
