@@ -1,8 +1,8 @@
-# Restaurant Delivery App
+# Beefy Billy's Ordering and Delivery Service 
 
 ## Project Description
 
-Restaurant Delivery App is a web application designed to facilitate customers ordering food from a restaurant online for delivery or pick up. The customers are also able to create a reservation at the restaurant for a future date. Employees of the restaurant are able to view pending orders and update their status as completed or cancelled, as well as submit new orders if the customer orders over the phone. Employees may also view and update the list of reservations as well as make a reservation for customers. Managers can make changes to the menu as well as see a list of all orders regardless of status. Managers can also create employees.
+Beefy Billy's Ordering and Delivery Service is a web application designed to facilitate customers ordering food from a restaurant online for delivery or pick up. The customers are also able to create a reservation at the restaurant for a future date. Employees of the restaurant are able to view pending orders and update their status as completed or cancelled, as well as submit new orders if the customer orders over the phone. Employees may also view and update the list of reservations as well as make a reservation for customers. Managers can make changes to the menu as well as see a list of all orders regardless of status. Managers can also create employees.
 
 ## Technologies Used
 
